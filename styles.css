@@ -451,6 +451,7 @@ strong {
     gap: 12px;
     opacity: 0;
     animation: fadeIn 0.8s ease 1.5s forwards;
+    z-index: 10;
 }
 
 .scroll-indicator span {
@@ -1395,6 +1396,15 @@ strong {
         --section-padding: 70px;
     }
     
+    /* Scroll indicator - position it lower on tablets */
+    .scroll-indicator {
+        bottom: 24px;
+    }
+    
+    .scroll-line {
+        height: 30px;
+    }
+    
     /* Navigation Mobile Menu */
     .nav-links {
         position: fixed;
@@ -1515,6 +1525,11 @@ strong {
     
     .container {
         padding: 0 16px;
+    }
+    
+    /* Hide scroll indicator on phones - takes up too much space */
+    .scroll-indicator {
+        display: none;
     }
     
     /* Hero */
@@ -1697,18 +1712,6 @@ strong {
     .hero-ring-2 {
         width: 165px;
         height: 165px;
-    }
-    
-    .scroll-indicator {
-        bottom: 20px;
-    }
-    
-    .scroll-indicator span {
-        font-size: 0.65rem;
-    }
-    
-    .scroll-line {
-        height: 30px;
     }
     
     /* Section Titles */
