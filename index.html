@@ -19,6 +19,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#ongoing-projects">Ongoing</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -97,9 +98,7 @@
                         developing end-to-end ML pipelines, publishing peer-reviewed research, and collaborating across disciplines.
                     </p>
                     <p class="about-closing">
-                        Broadly, I'm motivated by one question: <em>How can we design learning systems whose behavior we can 
-                        understand, control, and trust?</em> This question shapes both my research direction and how I think 
-                        about the future of AI.
+                        Broadly, my research is driven by a single organizing question: <em>how should we design learning operators that are simultaneously expressive, stable, and aligned with the geometry of the data they act on?</em> I approach generative modeling as a problem of operator design, studying how diffusion-based dynamics and attention mechanisms shape information flow, stability, and spectral behavior. My goal is to unify the locality and robustness of diffusion with the global expressiveness of attention by embedding physically and mathematically grounded structure directly into the attention operator itself—leading to generative models that are scalable, interpretable, and well-behaved across depth, particularly on structured domains such as graphs.
                     </p>
                 </div>
             </div>
@@ -178,30 +177,13 @@
                     </div>
                     <h3>Graduate Research Assistant</h3>
                     <p class="research-location">Drexel College of Computing and Informatics • Advisor: Ali Shokoufandeh</p>
-                    <ul class="research-list">
-                        <li>
-                            <strong>Spectral Attention Mechanism:</strong> Developed a transformer architecture that regularizes attention 
-                            before softmax via an SPD resolvent on queries/keys with layerwise damping, producing spectrally controlled, 
-                            stable attention and bounded gradients. <em>(Manuscripts in preparation)</em>
-                        </li>
-                        <li>
-                            <strong>Oscillatory GNN:</strong> Designed a graph neural network where nodes act as damped harmonic oscillators 
-                            with adaptive, state-dependent coupling and proved phase-locked synchronization. <em>(Manuscripts in preparation)</em>
-                        </li>
-                        <li>
-                            <strong>Fourier-Based Attention:</strong> Contributed to a learnable Fourier-based attention mechanism enabling 
-                            frequency-aware context modeling with improved accuracy by +1.8pp over Roformer. <em>(Paper under review at ICLR 2026)</em>
-                        </li>
-                        <li>
-                            <strong>MXene Generation:</strong> Developed a grammar-constrained Transformer for MXene materials generation, 
-                            achieving 97.7% valid outputs using reinforcement learning, in collaboration with the Chemical Engineering Department. <em>(Manuscripts in preparation)</em>
-                        </li>
-                        <li>
-                            <strong>Convex Attention:</strong> Implemented a convexified attention mechanism that adaptively weights input features 
-                            under convexity constraints, improving interpretability in data-limited industrial optimization with 95% R² accuracy. 
-                            <em>(Published in Machine Learning: Engineering Journal)</em>
-                        </li>
-                    </ul>
+                    <p class="research-summary">
+                        My research focuses on developing novel deep learning architectures with strong theoretical foundations, 
+                        particularly in attention mechanisms and graph neural networks. I work on spectral methods for transformer 
+                        regularization, oscillatory dynamics in GNNs, and Fourier-based positional encodings. I also collaborate 
+                        with the Chemical Engineering Department on generative models for materials science, applying reinforcement 
+                        learning to ensure valid molecular outputs.
+                    </p>
                 </article>
 
                 <article class="research-card">
@@ -211,14 +193,11 @@
                     </div>
                     <h3>Graduate Research Assistant</h3>
                     <p class="research-location">DONUTS Lab • Drexel College of Computing and Informatics</p>
-                    <ul class="research-list">
-                        <li>
-                            Built an NLP pipeline (DistilBERT + per-video positional encodings + K-Means) to analyze recurring themes 
-                            in 145,515 comments on TikTok videos tagged with #harassment, identifying nine topics, including community 
-                            response to harassment and threats, law enforcement responses to harassment, and discussion around self-defense strategies. 
-                            <em>(Published in Extended Abstracts of the CHI 2024)</em>
-                        </li>
-                    </ul>
+                    <p class="research-summary">
+                        At the DONUTS Lab, I applied natural language processing techniques to study online harassment on social media 
+                        platforms. I developed an NLP pipeline combining transformer-based embeddings with clustering methods to 
+                        analyze large-scale comment data, uncovering thematic patterns in community responses to harassment.
+                    </p>
                 </article>
 
                 <article class="research-card">
@@ -228,13 +207,11 @@
                     </div>
                     <h3>Undergraduate Research Assistant</h3>
                     <p class="research-location">University of Tehran • Advisor: Behnam Bahrak</p>
-                    <ul class="research-list">
-                        <li>
-                            Applied various machine learning models (ARIMA, SVM, RNN, LSTM, Bi-LSTM) to predict the daily price 
-                            of Bitcoin, Ethereum, and BNB Coin, leading to the publication: 
-                            <em>"Comparison of Machine Learning Methods for Cryptocurrency Price Prediction."</em>
-                        </li>
-                    </ul>
+                    <p class="research-summary">
+                        My undergraduate research explored time-series forecasting for cryptocurrency markets. I conducted a 
+                        comparative analysis of classical and deep learning models for price prediction, evaluating their 
+                        performance across multiple cryptocurrencies and market conditions.
+                    </p>
                 </article>
             </div>
         </div>
@@ -245,8 +222,7 @@
         <div class="container">
             <h2 class="section-title">Publications</h2>
             <p class="publications-intro">
-                My research focuses on developing novel deep learning architectures with strong theoretical foundations. 
-                Below are my published works, papers under review, and manuscripts in preparation.
+                My research focuses on developing novel deep learning architectures with strong theoretical foundations.
             </p>
             
             <div class="publications-grid">
@@ -259,7 +235,7 @@
                     <article class="publication-card">
                         <p class="publication-venue">Machine Learning: Engineering Journal</p>
                         <h3 class="publication-title">Convex Attention: A Data-Driven Approach for Industrial Optimization</h3>
-                        <p class="publication-authors">Atieh Armin, et al.</p>
+                        <p class="publication-authors">D Schwartz, <strong>A Armin</strong>, A Shokoufandeh, M Soroush</p>
                         <p class="publication-description">
                             Implemented a convexified attention mechanism that adaptively weights input features 
                             under convexity constraints, improving interpretability in data-limited industrial 
@@ -270,7 +246,7 @@
                     <article class="publication-card">
                         <p class="publication-venue">Extended Abstracts of the CHI 2024</p>
                         <h3 class="publication-title">Support in Short Form: Investigating TikTok Comments on Videos with #Harassment</h3>
-                        <p class="publication-authors">Atieh Armin, et al.</p>
+                        <p class="publication-authors"><strong>Atieh Armin</strong>, JJ Trybala, J Young, A Razi</p>
                         <p class="publication-description">
                             Built an NLP pipeline (DistilBERT + per-video positional encodings + K-Means) to analyze 
                             recurring themes in 145,515 comments on TikTok videos tagged with #harassment, identifying 
@@ -282,7 +258,7 @@
                     <article class="publication-card">
                         <p class="publication-venue">University of Tehran</p>
                         <h3 class="publication-title">Comparison of Machine Learning Methods for Cryptocurrency Price Prediction</h3>
-                        <p class="publication-authors">Atieh Armin, et al.</p>
+                        <p class="publication-authors"><strong>Atieh Armin</strong>, A Shiri, B Bahrak</p>
                         <p class="publication-description">
                             Applied various machine learning models (ARIMA, SVM, RNN, LSTM, Bi-LSTM) to predict the 
                             daily price of Bitcoin, Ethereum, and BNB Coin, providing comprehensive comparative analysis 
@@ -290,62 +266,66 @@
                         </p>
                     </article>
                 </div>
-                
-                <!-- Under Review -->
-                <div class="publication-category">
-                    <div class="publication-category-title">
-                        <span class="pub-status-badge under-review">Under Review</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ongoing Projects Section -->
+    <section id="ongoing-projects" class="section ongoing-projects">
+        <div class="container">
+            <h2 class="section-title">Ongoing Projects</h2>
+            <p class="ongoing-intro">
+                Current research projects I'm actively working on, spanning attention mechanisms, graph neural networks, and AI for materials science.
+            </p>
+            
+            <div class="ongoing-grid">
+                <article class="ongoing-card">
+                    <div class="ongoing-header">
+                        <span class="ongoing-status">Under Review @ ICLR 2026</span>
                     </div>
-                    
-                    <article class="publication-card">
-                        <p class="publication-venue">ICLR 2026</p>
-                        <h3 class="publication-title">Learnable Fourier-Based Attention for Frequency-Aware Context Modeling</h3>
-                        <p class="publication-authors">Atieh Armin, et al.</p>
-                        <p class="publication-description">
-                            Contributed to a learnable Fourier-based attention mechanism enabling frequency-aware 
-                            context modeling with improved accuracy by +1.8pp over Roformer, advancing the state-of-the-art 
-                            in positional encoding for transformers.
-                        </p>
-                    </article>
-                </div>
+                    <h3>Fourier-Based Attention</h3>
+                    <p class="ongoing-description">
+                        Developing a learnable Fourier-based attention mechanism that enables frequency-aware context modeling. 
+                        This approach advances positional encoding for transformers, achieving +1.8pp improvement over Roformer 
+                        by leveraging spectral properties of input sequences.
+                    </p>
+                </article>
                 
-                <!-- In Preparation -->
-                <div class="publication-category">
-                    <div class="publication-category-title">
-                        <span class="pub-status-badge in-prep">In Preparation</span>
+                <article class="ongoing-card">
+                    <div class="ongoing-header">
+                        <span class="ongoing-status">In Progress</span>
                     </div>
-                    
-                    <article class="publication-card">
-                        <p class="publication-venue">Manuscript in Preparation</p>
-                        <h3 class="publication-title">Spectral Attention Mechanism for Stable Transformers</h3>
-                        <p class="publication-authors">Atieh Armin, Ali Shokoufandeh</p>
-                        <p class="publication-description">
-                            A transformer architecture that regularizes attention before softmax via an SPD resolvent 
-                            on queries/keys with layerwise damping, producing spectrally controlled, stable attention 
-                            and bounded gradients.
-                        </p>
-                    </article>
-                    
-                    <article class="publication-card">
-                        <p class="publication-venue">Manuscript in Preparation</p>
-                        <h3 class="publication-title">Oscillatory Graph Neural Networks with Adaptive Coupling</h3>
-                        <p class="publication-authors">Atieh Armin, Ali Shokoufandeh</p>
-                        <p class="publication-description">
-                            A graph neural network architecture where nodes act as damped harmonic oscillators with 
-                            adaptive, state-dependent coupling, with proven phase-locked synchronization properties.
-                        </p>
-                    </article>
-                    
-                    <article class="publication-card">
-                        <p class="publication-venue">Manuscript in Preparation</p>
-                        <h3 class="publication-title">Grammar-Constrained Transformer for MXene Materials Generation</h3>
-                        <p class="publication-authors">Atieh Armin, et al.</p>
-                        <p class="publication-description">
-                            Developed a grammar-constrained Transformer for MXene materials generation, achieving 97.7% 
-                            valid outputs using reinforcement learning, in collaboration with the Chemical Engineering Department.
-                        </p>
-                    </article>
-                </div>
+                    <h3>Spectral Attention Mechanism</h3>
+                    <p class="ongoing-description">
+                        Designing a transformer architecture that regularizes attention before softmax via an SPD resolvent 
+                        on queries and keys with layerwise damping. This produces spectrally controlled, stable attention 
+                        with bounded gradients, addressing training instabilities in deep transformers.
+                    </p>
+                </article>
+                
+                <article class="ongoing-card">
+                    <div class="ongoing-header">
+                        <span class="ongoing-status">In Progress</span>
+                    </div>
+                    <h3>Oscillatory Graph Neural Networks</h3>
+                    <p class="ongoing-description">
+                        Building a GNN architecture where nodes act as damped harmonic oscillators with adaptive, 
+                        state-dependent coupling. This framework comes with proven phase-locked synchronization properties, 
+                        providing theoretical guarantees for message passing dynamics.
+                    </p>
+                </article>
+                
+                <article class="ongoing-card">
+                    <div class="ongoing-header">
+                        <span class="ongoing-status">In Progress</span>
+                    </div>
+                    <h3>MXene Materials Generation</h3>
+                    <p class="ongoing-description">
+                        Collaborating with the Chemical Engineering Department on a grammar-constrained Transformer for 
+                        generating valid MXene materials. Using reinforcement learning to enforce chemical validity constraints, 
+                        achieving 97.7% valid outputs for novel material discovery.
+                    </p>
+                </article>
             </div>
         </div>
     </section>

@@ -724,6 +724,12 @@ strong {
     margin-bottom: 20px;
 }
 
+.research-summary {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
 .research-list {
     list-style: none;
 }
@@ -880,6 +886,77 @@ strong {
     border-color: var(--accent-primary);
     color: var(--accent-primary);
     background: var(--accent-glow);
+}
+
+/* ============================================
+   ONGOING PROJECTS SECTION
+   ============================================ */
+.ongoing-projects {
+    background: var(--bg-primary);
+}
+
+.ongoing-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 48px;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.ongoing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.ongoing-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px;
+    transition: all var(--transition-base);
+}
+
+.ongoing-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(5, 150, 105, 0.12);
+}
+
+.ongoing-header {
+    margin-bottom: 16px;
+}
+
+.ongoing-status {
+    display: inline-block;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: var(--bg-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ongoing-card h3 {
+    font-size: 1.35rem;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.ongoing-description {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+    .ongoing-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================
