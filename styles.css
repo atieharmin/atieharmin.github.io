@@ -5,23 +5,23 @@
 
 /* CSS Variables */
 :root {
-    /* Colors - Warm dark theme */
-    --bg-primary: #0a0a0b;
-    --bg-secondary: #111113;
-    --bg-tertiary: #1a1a1d;
-    --bg-card: #16161a;
+    /* Colors - Bright white & purple theme */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f7fc;
+    --bg-tertiary: #f0eef8;
+    --bg-card: #ffffff;
     
-    --text-primary: #f4f4f5;
-    --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
+    --text-primary: #1a1625;
+    --text-secondary: #5c5470;
+    --text-muted: #8b83a3;
     
-    --accent-primary: #d4a574;
-    --accent-secondary: #e8c4a0;
-    --accent-glow: rgba(212, 165, 116, 0.15);
-    --accent-gradient: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+    --accent-primary: #7c3aed;
+    --accent-secondary: #a78bfa;
+    --accent-glow: rgba(124, 58, 237, 0.12);
+    --accent-gradient: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
     
-    --border-color: rgba(244, 244, 245, 0.08);
-    --border-hover: rgba(212, 165, 116, 0.3);
+    --border-color: rgba(124, 58, 237, 0.12);
+    --border-hover: rgba(124, 58, 237, 0.35);
     
     /* Typography */
     --font-display: 'Cormorant Garamond', Georgia, serif;
@@ -133,10 +133,11 @@ strong {
 }
 
 .nav.scrolled {
-    background: rgba(10, 10, 11, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     padding: 15px 0;
     border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.08);
 }
 
 .nav-container {
@@ -231,8 +232,8 @@ strong {
     inset: 0;
     background-image: 
         radial-gradient(circle at 20% 50%, var(--accent-glow) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(212, 165, 116, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 40% 80%, rgba(212, 165, 116, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 40% 80%, rgba(168, 85, 247, 0.04) 0%, transparent 40%);
 }
 
 .hero-pattern::before {
@@ -240,8 +241,8 @@ strong {
     position: absolute;
     inset: 0;
     background-image: 
-        linear-gradient(rgba(244, 244, 245, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(244, 244, 245, 0.02) 1px, transparent 1px);
+        linear-gradient(rgba(124, 58, 237, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124, 58, 237, 0.06) 1px, transparent 1px);
     background-size: 80px 80px;
     mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
 }
@@ -278,7 +279,7 @@ strong {
     font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 600;
     margin-bottom: 16px;
-    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-secondary) 100%);
+    background: linear-gradient(135deg, var(--text-primary) 0%, #7c3aed 60%, #a855f7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -346,7 +347,7 @@ strong {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(212, 165, 116, 0.3);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
 }
 
 .btn-secondary {
@@ -375,10 +376,10 @@ strong {
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle at 30% 30%, var(--accent-secondary) 0%, var(--accent-primary) 50%, transparent 70%);
+    background: radial-gradient(circle at 30% 30%, #c4b5fd 0%, #a855f7 40%, #7c3aed 70%, transparent 85%);
     border-radius: 50%;
     filter: blur(40px);
-    opacity: 0.6;
+    opacity: 0.7;
     animation: pulse 4s ease-in-out infinite;
 }
 
@@ -477,11 +478,13 @@ strong {
     border-radius: 8px;
     padding: 24px;
     transition: all var(--transition-medium);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
 }
 
 .highlight-card:hover {
     border-color: var(--border-hover);
     transform: translateX(5px);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.12);
 }
 
 .highlight-icon {
@@ -551,11 +554,13 @@ strong {
     border-radius: 8px;
     padding: 30px;
     transition: all var(--transition-medium);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
 }
 
 .timeline-content:hover {
     border-color: var(--border-hover);
     transform: translateX(5px);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.12);
 }
 
 .timeline-header {
@@ -624,16 +629,18 @@ strong {
     border-radius: 12px;
     padding: 36px;
     transition: all var(--transition-medium);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
 }
 
 .research-card:hover {
     border-color: var(--border-hover);
     transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.12);
 }
 
 .research-card.featured {
     border-color: var(--accent-primary);
-    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(212, 165, 116, 0.05) 100%);
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(124, 58, 237, 0.06) 100%);
 }
 
 .research-card-header {
@@ -713,11 +720,13 @@ strong {
     border-radius: 12px;
     padding: 32px;
     transition: all var(--transition-medium);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
 }
 
 .project-card:hover {
     border-color: var(--border-hover);
     transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
 }
 
 .project-icon {
@@ -778,10 +787,12 @@ strong {
     border-radius: 12px;
     padding: 28px;
     transition: all var(--transition-medium);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
 }
 
 .skill-category:hover {
     border-color: var(--border-hover);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.12);
 }
 
 .skill-category h3 {
@@ -845,11 +856,13 @@ strong {
     border-radius: 12px;
     padding: 32px 24px;
     transition: all var(--transition-medium);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
 }
 
 .contact-card:hover {
     border-color: var(--accent-primary);
     transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
 }
 
 .contact-icon {
@@ -1020,7 +1033,7 @@ strong {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: var(--bg-primary);
+        background: rgba(255, 255, 255, 0.98);
         flex-direction: column;
         justify-content: center;
         align-items: center;
