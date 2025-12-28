@@ -15,10 +15,10 @@
     --text-secondary: #3d5a4c;
     --text-muted: #6b8f7a;
     
-    --accent-primary: #059669;
-    --accent-secondary: #34d399;
+    --accent-primary: #0b513b;
+    --accent-secondary: #177854;
     --accent-glow: rgba(5, 150, 105, 0.12);
-    --accent-gradient: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    --accent-gradient: linear-gradient(135deg, #0b513b 0%, #177854 100%);
     
     --border-color: rgba(5, 150, 105, 0.15);
     --border-hover: rgba(5, 150, 105, 0.4);
@@ -376,7 +376,7 @@ strong {
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle at 30% 30%, #6ee7b7 0%, #34d399 40%, #059669 70%, transparent 85%);
+    background: radial-gradient(circle at 30% 30%, #93c5b0 0%, #52a188 40%, #0b513b 70%, transparent 85%);
     border-radius: 50%;
     filter: blur(40px);
     opacity: 0.7;
@@ -506,28 +506,6 @@ strong {
 .highlight-card p {
     font-size: 0.95rem;
     line-height: 1.6;
-}
-
-.highlight-card-link {
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-}
-
-.highlight-link-text {
-    display: block;
-    margin-top: 12px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--accent-primary);
-    opacity: 0;
-    transform: translateX(-5px);
-    transition: all var(--transition-fast);
-}
-
-.highlight-card-link:hover .highlight-link-text {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 /* ============================================
@@ -742,25 +720,6 @@ strong {
     line-height: 1.8;
 }
 
-.scholar-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--accent-primary);
-    font-weight: 500;
-    margin-top: 10px;
-    transition: all var(--transition-fast);
-}
-
-.scholar-link:hover {
-    color: var(--text-primary);
-    gap: 12px;
-}
-
-.scholar-link svg {
-    flex-shrink: 0;
-}
-
 .publications-grid {
     display: flex;
     flex-direction: column;
@@ -848,10 +807,6 @@ strong {
     font-size: 0.95rem;
     line-height: 1.7;
     color: var(--text-secondary);
-    margin-bottom: 16px;
-}
-
-.publication-card:last-child .publication-description {
     margin-bottom: 0;
 }
 
@@ -859,6 +814,7 @@ strong {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    margin-top: 16px;
 }
 
 .pub-link {
@@ -878,10 +834,6 @@ strong {
     border-color: var(--accent-primary);
     color: var(--accent-primary);
     background: var(--accent-glow);
-}
-
-.pub-link svg {
-    flex-shrink: 0;
 }
 
 /* ============================================
