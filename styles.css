@@ -632,6 +632,7 @@ strong {
     display: inline-flex;
     gap: 12px;
     margin-left: 12px;
+    margin-top: 10px;
 }
 
 .doc-link {
