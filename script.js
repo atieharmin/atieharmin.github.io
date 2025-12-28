@@ -42,6 +42,26 @@ function initNavigation() {
         });
     });
 
+    // Close mobile menu on window resize (if resizing to desktop)
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (navLinks.classList.contains('active') && 
+            !navLinks.contains(e.target) && 
+            !navToggle.contains(e.target)) {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -123,7 +143,7 @@ function initScrollEffects() {
 function initRevealAnimations() {
     // Add reveal class to elements
     const revealElements = document.querySelectorAll(
-        '.timeline-item, .research-card, .project-card, .skill-category, .contact-card, .highlight-card, .about-text'
+        '.timeline-item, .research-card, .project-card, .skill-category, .contact-card, .highlight-card, .about-text, .publication-card, .ongoing-card'
     );
     
     revealElements.forEach(el => {
