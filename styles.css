@@ -456,9 +456,26 @@ strong {
     align-items: start;
 }
 
+.about-content-full {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-closing {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
 }
 
 .about-lead {
@@ -609,6 +626,35 @@ strong {
     position: absolute;
     left: 0;
     color: var(--accent-primary);
+}
+
+.candidacy-links {
+    display: inline-flex;
+    gap: 12px;
+    margin-left: 12px;
+}
+
+.doc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent-primary);
+    padding: 3px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.doc-link:hover {
+    border-color: var(--accent-primary);
+    background: var(--accent-glow);
+}
+
+.doc-link svg {
+    flex-shrink: 0;
 }
 
 /* ============================================
@@ -897,6 +943,32 @@ strong {
     padding: 4px 12px;
     border-radius: 20px;
     border: 1px solid var(--border-color);
+}
+
+.project-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent-primary);
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.project-github-link:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+.project-github-link svg {
+    flex-shrink: 0;
 }
 
 /* ============================================
