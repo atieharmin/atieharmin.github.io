@@ -420,7 +420,7 @@ strong {
     z-index: 1;
 }
 
-.hero-ring::before {
+/* .hero-ring::before {
     content: '';
     position: absolute;
     top: -4px;
@@ -429,7 +429,7 @@ strong {
     height: 8px;
     background: var(--accent-primary);
     border-radius: 50%;
-}
+} */
 
 .hero-ring-2 {
     width: 380px;
