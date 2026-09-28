@@ -1,4 +1,4 @@
-# Atieh Armin - Portfolio Website
+# Atieh Armin - Portfolio Websitee
 
 A professional portfolio website showcasing AI research, education, projects, and skills.
 
