@@ -58,7 +58,7 @@
         <div class="now">
           <p class="now-label">Now</p>
           <ul>
-            <li>Benchmarking <strong>D2HGT</strong>, a damped-diffusion graph transformer, on large graphs.</li>
+            <li>Benchmarking <strong>D2HGT</strong>, our new graph transformer, on large graphs.</li>
           </ul>
         </div>
       </div>
@@ -80,12 +80,12 @@
         <h2 class="section-label" id="research-title">Research</h2>
         <div class="section-body">
           <p class="intro">My PhD treats generation as a problem of <em>operator design</em>. Langevin dynamics and diffusion give stable, local, geometry-aware updates, but they are slow. Attention is fast and global, but it has no built-in notion of locality, damping or spectral structure, and on graphs it tends to blur everything together at depth.</p>
-          <p class="intro">I work on putting that structure back, using tools from spectral graph theory, operator theory and dynamical systems: attention kernels that internalize diffusion, damping across depth, frequency-aware positional encodings, and message passing with provable synchronization.</p>
+          <p class="intro">I work on putting that structure back into attention and message passing, using tools from spectral graph theory, operator theory and dynamical systems.</p>
 
           <article class="candidacy">
             <p class="eyebrow">Candidacy exam</p>
             <h3>Generative Modeling as Operator Design: From Diffusion to Attention</h3>
-            <p>Traces generative modeling from Markov chains and Langevin dynamics through score-based diffusion to attention, and proposes graph attention that carries diffusion-based propagation, harmonic spectral bias and depth-wise damping inside the kernel itself.</p>
+            <p>Traces generative modeling from Markov chains and Langevin dynamics through score-based diffusion to attention, and argues for attention operators with geometric and spectral structure built in.</p>
             <ul class="pills">
               <li><a href="Candidacy%20Report.pdf">Report (PDF)</a></li>
               <li><a href="Candidacy%20Presentation.pdf">Slides (PDF)</a></li>
@@ -99,7 +99,7 @@
               <div>
                 <p class="project-meta"><span class="status">Submitted to CVPR 2027</span><span>Diffusion models &middot; MCMC</span></p>
                 <h4>PDLG: nonreversible Langevin sampling</h4>
-                <p>Perturbed Denoising Langevin&ndash;Gibbs adds a bounded, nonreversible perturbation to denoising MCMC, which speeds up mixing and improves the samples of score-based generative models. From the paper <cite>Beyond Reversibility: Skew-Score Corrections for Efficient Diffusion Image Sampling</cite>.</p>
+                <p>Faster, higher-quality image sampling for diffusion models by going beyond reversible Langevin dynamics. From the paper <cite>Beyond Reversibility: Skew-Score Corrections for Efficient Diffusion Image Sampling</cite>.</p>
               </div>
             </li>
             <li class="project">
@@ -107,7 +107,7 @@
               <div>
                 <p class="project-meta"><span class="status">In revision</span><span>Generative models &middot; AI for materials</span></p>
                 <h4>Grammar-constrained MXene generation</h4>
-                <p>With Drexel Chemical Engineering. A grammar-masked GPT-2 proposes layer-resolved MXene compositions that are well-formed by construction; a chemistry-aware discriminator, reinforcement learning and expert feedback then refine them. After RL, 97.7% of generated candidates are chemically valid.</p>
+                <p>With Drexel Chemical Engineering. A grammar-constrained generative model that proposes new layer-resolved MXene compositions and steers them toward chemically valid candidates.</p>
                 <p class="project-links"><a href="https://github.com/atieharmin/Grammar-Constrained-MXene">Code</a></p>
               </div>
             </li>
@@ -116,7 +116,7 @@
               <div>
                 <p class="project-meta"><span class="status">In progress</span><span>Graph transformers &middot; Spectral graph theory &middot; Stability</span></p>
                 <h4>D2HGT: Damped Diffused Harmonic Graph Transformer</h4>
-                <p>A graph transformer whose attention filters queries and keys through a resolvent of the graph Laplacian, a spectral low-pass diffusion, with exponential damping across layers. The aim is attention that stays discriminative and trains stably at depth instead of collapsing toward uniform. It is the case study from my candidacy and is now being benchmarked against standard graph transformers, including on large graphs.</p>
+                <p>A graph transformer designed to stay expressive and train stably at depth, instead of blurring node representations together. It grows out of my candidacy work and is being benchmarked against standard graph transformers, including on large graphs.</p>
               </div>
             </li>
             <li class="project">
@@ -124,7 +124,7 @@
               <div>
                 <p class="project-meta"><span class="status">In progress</span><span>Transformers &middot; Positional encoding</span></p>
                 <h4>Fourier RoFormer: frequency-aware attention</h4>
-                <p>A learnable Fourier modulation layered on rotary position embeddings, so attention can weigh context by its spectral content. In Vision Transformers it improves on RoFormer by 1.8 points, with experiments from CIFAR and Flowers-102 up to ImageNet.</p>
+                <p>Frequency-aware positional encoding for transformers, for richer context modeling in vision models.</p>
               </div>
             </li>
             <li class="project">
@@ -132,7 +132,7 @@
               <div>
                 <p class="project-meta"><span class="status">In progress</span><span>Graph neural networks &middot; Dynamical systems</span></p>
                 <h4>Adaptive Oscillatory GNNs for Deep Geometric Learning</h4>
-                <p>Message passing in which every node is a damped harmonic oscillator with adaptive, state-dependent coupling. The model comes with proven phase-locked synchronization, and I apply it to segmenting spatiotemporal patterns in reaction&ndash;diffusion data.</p>
+                <p>Graph neural networks built on oscillator dynamics, aimed at deep message passing with theoretical guarantees.</p>
               </div>
             </li>
           </ol>
