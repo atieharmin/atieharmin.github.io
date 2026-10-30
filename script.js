@@ -5,6 +5,12 @@
   var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+  // Safari before iOS 14 only supports the older addListener API.
+  function onMediaChange(query, fn) {
+    if (query.addEventListener) query.addEventListener('change', fn);
+    else if (query.addListener) query.addListener(fn);
+  }
+
   /* ---------- Theme toggle ---------- */
   var toggle = document.querySelector('.theme-toggle');
 
@@ -28,7 +34,7 @@
     document.dispatchEvent(new Event('themechange'));
   });
 
-  darkQuery.addEventListener('change', function () {
+  onMediaChange(darkQuery, function () {
     syncToggle();
     document.dispatchEvent(new Event('themechange'));
   });
@@ -69,7 +75,7 @@
   var TAU = Math.PI * 2;
   var REACH = 3, K = 2.2, GAMMA = 1.6, SPEED = 1.5, H = 1 / 120;
 
-  var N = Math.max(36, Math.min(84, Math.round(canvas.clientWidth / 14)));
+  var N = Math.max(48, Math.min(84, Math.round(canvas.clientWidth / 14)));
   var theta = new Float64Array(N);
   var vel = new Float64Array(N);
   var omega = new Float64Array(N);
@@ -147,7 +153,7 @@
     var mid = height / 2;
     var amp = height * 0.33;
     var dx = (width - 20) / (N - 1);
-    var r = Math.max(1.4, Math.min(2.6, dx * 0.2));
+    var r = Math.max(1.4, Math.min(2.6, dx * 0.26));
     var i, x, y;
     var ys = new Array(N);
     for (i = 0; i < N; i++) ys[i] = mid - amp * Math.sin(theta[i]);
@@ -247,7 +253,7 @@
     draw();
   });
 
-  reduceMotion.addEventListener('change', function () {
+  onMediaChange(reduceMotion, function () {
     if (reduceMotion.matches) { stop(); settleStatic(); } else start();
   });
 
@@ -256,6 +262,7 @@
   if (reduceMotion.matches) advance(6);
   resize();
   updateReadout();
+  canvas.parentNode.parentNode.classList.add('is-live');
 
   if ('ResizeObserver' in window) new ResizeObserver(resize).observe(canvas);
   else window.addEventListener('resize', resize);
