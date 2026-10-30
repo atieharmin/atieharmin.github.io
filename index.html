@@ -48,7 +48,7 @@
         <p class="kicker">PhD Candidate &middot; Computer Science &middot; Drexel University</p>
         <h1>Atieh Armin</h1>
         <p class="lede">I study generative models as <em>operators</em>. My work asks how to build attention, diffusion and message-passing layers that are expressive, stable, and faithful to the geometry of the data they act on.</p>
-        <p class="hero-sub">Advised by Ali Shokoufandeh at Drexel&rsquo;s College of Computing &amp; Informatics. Before that, a B.Sc. in Computer Engineering from the University of Tehran.</p>
+        <p class="hero-sub">Advised by Dr. Ali Shokoufandeh at Drexel&rsquo;s College of Computing &amp; Informatics.</p>
         <ul class="pills">
           <li><a href="mailto:atieharmin78@gmail.com">Email</a></li>
           <li><a href="https://scholar.google.com/citations?user=vuubQDkAAAAJ&amp;hl=en">Google Scholar</a></li>
@@ -80,7 +80,7 @@
         <h2 class="section-label" id="research-title">Research</h2>
         <div class="section-body">
           <p class="intro">My PhD treats generation as a problem of <em>operator design</em>. Langevin dynamics and diffusion give stable, local, geometry-aware updates, but they are slow. Attention is fast and global, but it has no built-in notion of locality, damping or spectral structure, and on graphs it tends to blur everything together at depth.</p>
-          <p class="intro">I work on putting that structure back: attention kernels that internalize diffusion, damping across depth, frequency-aware positional encodings, and message passing with provable synchronization.</p>
+          <p class="intro">I work on putting that structure back, using tools from spectral graph theory, operator theory and dynamical systems: attention kernels that internalize diffusion, damping across depth, frequency-aware positional encodings, and message passing with provable synchronization.</p>
 
           <article class="candidacy">
             <p class="eyebrow">Candidacy exam</p>
@@ -97,9 +97,9 @@
             <li class="project">
               <svg class="glyph" viewBox="0 0 44 44" aria-hidden="true"><path d="M4.0 8.0 L4.6 9.4 L5.2 12.0 L5.8 15.6 L6.4 19.6 L7.1 23.5 L7.7 26.9 L8.3 29.5 L8.9 31.0 L9.5 31.4 L10.1 30.7 L10.7 29.1 L11.3 26.8 L11.9 24.2 L12.5 21.6 L13.2 19.2 L13.8 17.3 L14.4 16.2 L15.0 15.7 L15.6 16.1 L16.2 17.0 L16.8 18.4 L17.4 20.1 L18.0 21.9 L18.6 23.6 L19.3 24.9 L19.9 25.8 L20.5 26.2 L21.1 26.0 L21.7 25.5 L22.3 24.6 L22.9 23.5 L23.5 22.3 L24.1 21.2 L24.7 20.3 L25.4 19.6 L26.0 19.3 L26.6 19.3 L27.2 19.6 L27.8 20.1 L28.4 20.8 L29.0 21.6 L29.6 22.4 L30.2 23.0 L30.8 23.5 L31.5 23.8 L32.1 23.8 L32.7 23.7 L33.3 23.3 L33.9 22.9 L34.5 22.4 L35.1 21.9 L35.7 21.4 L36.3 21.0 L36.9 20.8 L37.6 20.8 L38.2 20.8 L38.8 21.0 L39.4 21.3 L40.0 21.7"/><path class="faint" d="M4 38h36"/></svg>
               <div>
-                <p class="project-meta"><span class="status">In progress</span><span>Graph transformers &middot; Spectral methods &middot; Stability</span></p>
+                <p class="project-meta"><span class="status">In progress</span><span>Graph transformers &middot; Spectral graph theory &middot; Stability</span></p>
                 <h4>D2HGT: Damped Diffused Harmonic Graph Transformer</h4>
-                <p>A graph transformer whose attention runs a spectral resolvent diffusion on queries and keys, with exponential damping across layers. The aim is attention that stays discriminative and trains stably at depth instead of collapsing toward uniform. It is the case study from my candidacy and is now being benchmarked against standard graph transformers, including on large graphs.</p>
+                <p>A graph transformer whose attention filters queries and keys through a resolvent of the graph Laplacian, a spectral low-pass diffusion, with exponential damping across layers. The aim is attention that stays discriminative and trains stably at depth instead of collapsing toward uniform. It is the case study from my candidacy and is now being benchmarked against standard graph transformers, including on large graphs.</p>
               </div>
             </li>
             <li class="project">
@@ -225,7 +225,7 @@
               <div>
                 <h3>Ph.D. in Computer Science</h3>
                 <p class="where">Drexel University &middot; Advisor: Ali Shokoufandeh</p>
-                <p>Generative AI, graph neural networks, physics-informed models, operator theory. Advanced to candidacy with <a href="Candidacy%20Report.pdf">Generative Modeling as Operator Design</a>.</p>
+                <p>Generative AI, graph neural networks, spectral graph theory, physics-informed models, operator theory. Advanced to candidacy with <a href="Candidacy%20Report.pdf">Generative Modeling as Operator Design</a>.</p>
               </div>
             </li>
             <li>
@@ -245,17 +245,12 @@
       <div class="section-inner">
         <h2 class="section-label" id="earlier-title">Earlier work</h2>
         <div class="section-body">
-          <h3 class="sub-head">Projects</h3>
           <ul class="earlier">
             <li><a href="https://github.com/atieharmin/Covid-19-classification"><span class="earlier-title">COVID-19 X-ray diagnosis</span><span class="earlier-desc">Transfer learning with EfficientNet and MobileNet, served with Streamlit</span></a></li>
+            <li><a href="https://github.com/atieharmin/Deep-Learning-Course-Projects"><span class="earlier-title">Deep learning from scratch</span><span class="earlier-desc">Backpropagation, CNNs and RNNs implemented without frameworks</span></a></li>
+            <li><a href="https://github.com/atieharmin/Machine-Learning-Course-Projects"><span class="earlier-title">Machine learning from scratch</span><span class="earlier-desc">Regression, centroid and Bayes classifiers, Gaussian mixture models, k-NN and PCA</span></a></li>
+            <li><a href="https://github.com/atieharmin/RecSys-Course-Projects"><span class="earlier-title">Recommender systems</span><span class="earlier-desc">Collaborative, content-based and hybrid models on MovieLens and Amazon ratings</span></a></li>
             <li><a href="https://github.com/atieharmin/IEMDB"><span class="earlier-title">IEMDB</span><span class="earlier-desc">A full-stack movie database with CI/CD, JDBC and OAuth</span></a></li>
-          </ul>
-
-          <h3 class="sub-head">Course projects</h3>
-          <ul class="earlier">
-            <li><a href="https://github.com/atieharmin/Machine-Learning-Course-Projects"><span class="earlier-title">Machine Learning</span><span class="earlier-desc">Regression, centroid and Bayes classifiers, Gaussian mixture models, k-NN and PCA implemented from scratch</span></a></li>
-            <li><a href="https://github.com/atieharmin/Deep-Learning-Course-Projects"><span class="earlier-title">Deep Learning</span><span class="earlier-desc">Forward and backpropagation, regularization and CNNs without frameworks, plus an RNN for word generation</span></a></li>
-            <li><a href="https://github.com/atieharmin/RecSys-Course-Projects"><span class="earlier-title">Recommender Systems</span><span class="earlier-desc">Collaborative, content-based and hybrid recommenders on MovieLens and Amazon ratings</span></a></li>
           </ul>
         </div>
       </div>

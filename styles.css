@@ -210,7 +210,7 @@ cite { font-style: italic; }
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 8.4vw, 5.75rem);
+  font-size: clamp(2.6rem, 6.6vw, 4.6rem);
   line-height: 0.95;
   font-weight: 500;
   letter-spacing: -0.025em;
