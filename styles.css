@@ -354,6 +354,7 @@ cite { font-style: italic; }
 .candidacy .pills { margin-top: 18px; }
 
 .sub-head { margin: 52px 0 4px; }
+.section-body > .sub-head:first-child { margin-top: 0; }
 
 /* Projects */
 .project {
@@ -491,14 +492,21 @@ cite { font-style: italic; }
 
 /* Contact */
 .contact-lead { color: var(--ink-2); }
-.contact-email {
-  margin-top: 10px;
-  font-size: clamp(1.5rem, 4.2vw, 2.4rem);
-  line-height: 1.2;
-  letter-spacing: -0.015em;
-  overflow-wrap: anywhere;
+.contact-list { margin: 18px 0 0; }
+.contact-list div {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 20px;
+  align-items: baseline;
+  padding: 11px 0;
 }
-.contact-email a { text-decoration-thickness: 2px; text-underline-offset: 0.16em; }
+.contact-list div + div { border-top: 1px solid var(--rule); }
+.contact-list dt {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  color: var(--ink-3);
+}
+.contact-list dd { margin: 0; overflow-wrap: anywhere; }
 
 /* ---------- Footer ---------- */
 .footer { margin-top: clamp(80px, 10vw, 128px); }
@@ -536,6 +544,7 @@ cite { font-style: italic; }
   .glyph { width: 36px; height: 36px; }
   .pubs li { padding-left: 34px; }
   .candidacy { padding: 20px 18px 22px; }
+  .contact-list div { grid-template-columns: 84px minmax(0, 1fr); gap: 12px; }
 }
 
 @media (max-width: 560px) {
