@@ -263,6 +263,9 @@
   resize();
   updateReadout();
   canvas.parentNode.parentNode.classList.add('is-live');
+  // The live canvas replaces the self-animating SVG fallback; stop its animation.
+  var still = document.querySelector('.field-still');
+  if (still && still.pauseAnimations) still.pauseAnimations();
 
   if ('ResizeObserver' in window) new ResizeObserver(resize).observe(canvas);
   else window.addEventListener('resize', resize);
