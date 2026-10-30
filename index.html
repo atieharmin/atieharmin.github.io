@@ -1,609 +1,285 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atieh Armin | AI Researcher</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atieh Armin</title>
+  <meta name="description" content="Atieh Armin is a PhD candidate in Computer Science at Drexel University, working on generative models, attention and graph neural networks through the lens of operator design.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atieh Armin">
+  <meta property="og:description" content="PhD candidate at Drexel University. Generative modeling as operator design: diffusion, attention and graph neural networks.">
+  <meta property="og:url" content="https://atieharmin.github.io/">
+  <meta property="og:image" content="https://atieharmin.github.io/pic.jpeg">
+  <meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121214" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2318181d'/%3E%3Cpath d='M4 9 C7 30 9 30 11 16 S15 9 17 18 S21 19 23 15.5 S26 16 28 16' fill='none' stroke='%23f08a5d' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Atieh Armin</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#ongoing-projects">Ongoing Projects</a></li>
-                <li><a href="#projects">Previous Projects</a></li>
-                <!-- <li><a href="#skills">Skills</a></li> -->
-                <li><a href="#contact">Contact</a></li>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">Atieh Armin</a>
+      <nav aria-label="Sections">
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li class="nav-experience"><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <p class="kicker">PhD Candidate &middot; Computer Science &middot; Drexel University</p>
+        <h1>Atieh Armin</h1>
+        <p class="lede">I study generative models as <em>operators</em>. My work asks how to build attention, diffusion and message-passing layers that are expressive, stable, and faithful to the geometry of the data they act on.</p>
+        <p class="hero-sub">Advised by Ali Shokoufandeh at Drexel&rsquo;s College of Computing &amp; Informatics. Before that, a B.Sc. in Computer Engineering from the University of Tehran.</p>
+        <ul class="pills">
+          <li><a href="mailto:atieharmin78@gmail.com">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=vuubQDkAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://github.com/atieharmin">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/atieh-armin">LinkedIn</a></li>
+        </ul>
+        <div class="now">
+          <p class="now-label">Now</p>
+          <ul>
+            <li>Benchmarking <strong>D2HGT</strong>, a damped-diffusion graph transformer, on large graphs.</li>
+            <li>Revising our grammar-constrained <strong>MXene</strong> generation paper with Drexel Chemical Engineering.</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="pic.jpeg" width="800" height="800" alt="Portrait of Atieh Armin, smiling, in front of a yellow cable car">
+      </figure>
+    </section>
+
+    <figure class="field wrap">
+      <canvas id="field" role="img" aria-label="Animation of a ring of coupled, damped phase oscillators that drift from noise into synchronized waves"></canvas>
+      <figcaption>
+        <span><span class="fig-num">Fig. 1</span> Coupled, damped phase oscillators on a ring graph settle from noise into synchronized waves. Click or tap to perturb them.</span>
+        <span class="readout">coherence <output id="coherence">0.00</output></span>
+      </figcaption>
+    </figure>
+
+    <section class="section wrap" id="research" aria-labelledby="research-title">
+      <div class="section-inner">
+        <h2 class="section-label" id="research-title">Research</h2>
+        <div class="section-body">
+          <p class="intro">My PhD treats generation as a problem of <em>operator design</em>. Langevin dynamics and diffusion give stable, local, geometry-aware updates, but they are slow. Attention is fast and global, but it has no built-in notion of locality, damping or spectral structure, and on graphs it tends to blur everything together at depth.</p>
+          <p class="intro">I work on putting that structure back: attention kernels that internalize diffusion, damping across depth, frequency-aware positional encodings, and message passing with provable synchronization.</p>
+
+          <article class="candidacy">
+            <p class="eyebrow">Candidacy exam</p>
+            <h3>Generative Modeling as Operator Design: From Diffusion to Attention</h3>
+            <p>Traces generative modeling from Markov chains and Langevin dynamics through score-based diffusion to attention, and proposes graph attention that carries diffusion-based propagation, harmonic spectral bias and depth-wise damping inside the kernel itself.</p>
+            <ul class="pills">
+              <li><a href="Candidacy%20Report.pdf">Report (PDF)</a></li>
+              <li><a href="Candidacy%20Presentation.pdf">Slides (PDF)</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+          </article>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-pattern"></div>
+          <h3 class="sub-head">Current projects</h3>
+          <ol class="projects">
+            <li class="project">
+              <svg class="glyph" viewBox="0 0 44 44" aria-hidden="true"><path d="M4.0 8.0 L4.6 9.4 L5.2 12.0 L5.8 15.6 L6.4 19.6 L7.1 23.5 L7.7 26.9 L8.3 29.5 L8.9 31.0 L9.5 31.4 L10.1 30.7 L10.7 29.1 L11.3 26.8 L11.9 24.2 L12.5 21.6 L13.2 19.2 L13.8 17.3 L14.4 16.2 L15.0 15.7 L15.6 16.1 L16.2 17.0 L16.8 18.4 L17.4 20.1 L18.0 21.9 L18.6 23.6 L19.3 24.9 L19.9 25.8 L20.5 26.2 L21.1 26.0 L21.7 25.5 L22.3 24.6 L22.9 23.5 L23.5 22.3 L24.1 21.2 L24.7 20.3 L25.4 19.6 L26.0 19.3 L26.6 19.3 L27.2 19.6 L27.8 20.1 L28.4 20.8 L29.0 21.6 L29.6 22.4 L30.2 23.0 L30.8 23.5 L31.5 23.8 L32.1 23.8 L32.7 23.7 L33.3 23.3 L33.9 22.9 L34.5 22.4 L35.1 21.9 L35.7 21.4 L36.3 21.0 L36.9 20.8 L37.6 20.8 L38.2 20.8 L38.8 21.0 L39.4 21.3 L40.0 21.7"/><path class="faint" d="M4 38h36"/></svg>
+              <div>
+                <p class="project-meta"><span class="status">In progress</span><span>Graph transformers &middot; Spectral methods &middot; Stability</span></p>
+                <h4>D2HGT: Damped Diffused Harmonic Graph Transformer</h4>
+                <p>A graph transformer whose attention runs a spectral resolvent diffusion on queries and keys, with exponential damping across layers. The aim is attention that stays discriminative and trains stably at depth instead of collapsing toward uniform. It is the case study from my candidacy and is now being benchmarked against standard graph transformers, including on large graphs.</p>
+              </div>
+            </li>
+            <li class="project">
+              <svg class="glyph" viewBox="0 0 44 44" aria-hidden="true"><path d="M7 38V26M12 38V12M17 38V20M22 38V8M27 38V22M32 38V16M37 38V30"/><path class="faint" d="M4 38h36"/></svg>
+              <div>
+                <p class="project-meta"><span class="status">In revision</span><span>Transformers &middot; Positional encoding</span></p>
+                <h4>Fourier RoFormer: frequency-aware attention</h4>
+                <p>A learnable Fourier modulation layered on rotary position embeddings, so attention can weigh context by its spectral content. In Vision Transformers it improves on RoFormer by 1.8 points, with experiments from CIFAR and Flowers-102 up to ImageNet.</p>
+              </div>
+            </li>
+            <li class="project">
+              <svg class="glyph" viewBox="0 0 44 44" aria-hidden="true"><circle cx="12" cy="22" r="7.5"/><circle cx="32" cy="22" r="7.5"/><path class="faint" d="M19.5 22c1.5-3 3.5-3 5 0"/><circle class="fill" cx="17.3" cy="16.7" r="2"/><circle class="fill" cx="37.3" cy="16.7" r="2"/></svg>
+              <div>
+                <p class="project-meta"><span class="status">In progress</span><span>Graph neural networks &middot; Dynamical systems</span></p>
+                <h4>Oscillatory graph neural networks</h4>
+                <p>Message passing in which every node is a damped harmonic oscillator with adaptive, state-dependent coupling. The model comes with proven phase-locked synchronization, and I apply it to segmenting spatiotemporal patterns in reaction&ndash;diffusion data.</p>
+              </div>
+            </li>
+            <li class="project">
+              <svg class="glyph" viewBox="0 0 44 44" aria-hidden="true"><circle class="faint" cx="31" cy="13" r="4.5"/><circle class="faint" cx="31" cy="13" r="9"/><path d="M8.0 34.0 L10.3 32.5 L11.9 29.2 L13.1 26.1 L15.0 27.0 L15.8 24.7 L18.1 24.2 L19.6 21.7 L20.7 22.1 L19.5 20.5 L17.7 17.8 L16.0 17.1 L17.3 16.6 L14.7 15.4 L16.2 15.5 L15.2 13.2 L18.5 12.0 L19.9 13.5 L21.2 13.6 L23.5 11.3 L25.6 11.8 L25.1 15.2 L26.9 13.2 L27.5 15.3 L30.4 14.9 L31.0 12.2 L30.1 12.0 L31.6 14.1 L29.4 12.8 L30.6 9.7 L32.0 11.5 L31.0 13.9"/><circle class="fill" cx="8" cy="34" r="1.8"/></svg>
+              <div>
+                <p class="project-meta"><span class="status">Manuscript</span><span>Diffusion models &middot; MCMC</span></p>
+                <h4>PDLG: nonreversible Langevin sampling</h4>
+                <p>Perturbed Denoising Langevin&ndash;Gibbs adds a bounded, nonreversible perturbation to denoising MCMC, which speeds up mixing and improves the samples of score-based generative models. From the paper <cite>On the Robustness and Sampling Efficiency of Reversible Markov Processes Under Overdamped Langevin Dynamics</cite>.</p>
+              </div>
+            </li>
+            <li class="project">
+              <svg class="glyph" viewBox="0 0 44 44" aria-hidden="true"><path d="M6 9h32M6 35h32"/><path class="faint" d="M9 15.5h26M9 28.5h26"/><path d="M6 22h32"/><circle class="fill" cx="10" cy="9" r="2.2"/><circle class="fill" cx="22" cy="9" r="2.2"/><circle class="fill" cx="34" cy="9" r="2.2"/><circle class="fill" cx="16" cy="22" r="2.2"/><circle class="fill" cx="28" cy="22" r="2.2"/><circle class="fill" cx="10" cy="35" r="2.2"/><circle class="fill" cx="22" cy="35" r="2.2"/><circle class="fill" cx="34" cy="35" r="2.2"/></svg>
+              <div>
+                <p class="project-meta"><span class="status">In revision</span><span>Generative models &middot; AI for materials</span></p>
+                <h4>Grammar-constrained MXene generation</h4>
+                <p>With Drexel Chemical Engineering. A grammar-masked GPT-2 proposes layer-resolved MXene compositions that are well-formed by construction; a chemistry-aware discriminator, reinforcement learning and expert feedback then refine them. After RL, 97.7% of generated candidates are chemically valid.</p>
+                <p class="project-links"><a href="https://github.com/atieharmin/Grammar-Constrained-MXene">Code</a></p>
+              </div>
+            </li>
+          </ol>
         </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Atieh Armin</h1>
-                <div class="hero-title-wrapper">
-                    <span class="hero-title">AI Researcher</span>
-                    <span class="hero-divider">•</span>
-                    <span class="hero-title">PhD Candidate</span>
-                </div>
-                <p class="hero-description">
-                    Exploring the frontiers of <em>Generative AI</em>, <em>Deep Learning</em>, and <em>Graph Neural Networks</em> 
-                    at Drexel University. Passionate about bridging mathematical theory with practical machine learning innovations.
-                </p>
-                <div class="hero-cta">
-                    <a href="#research" class="btn btn-primary">View Research</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-orb"></div>
-                <div class="hero-image-wrapper">
-                    <img src="pic.jpeg" alt="Atieh Armin" class="hero-image">
-                </div>
-                <div class="hero-ring"></div>
-                <div class="hero-ring hero-ring-2"></div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content about-content-full">
-                <div class="about-text">
-                    <p>
-                        I'm a Ph.D. researcher in Computer Science at Drexel University, working under the supervision of 
-                        <strong>Dr. Ali Shokoufandeh</strong>. My work sits at the intersection of generative modeling, deep learning, 
-                        and mathematical structure, with a focus on understanding and designing learning systems not just as 
-                        empirical tools, but as operators—objects with stability, geometry, and theoretical guarantees.
-                    </p>
-                    <p>
-                        My current research explores transformer architectures and generative models through a theoretical and 
-                        systems-oriented lens.
-                        
-                        Particularly, my research is driven by a single organizing question: <em>how should we design learning operators that are simultaneously expressive, stable, and aligned with the geometry of the data they act on?</em> 
-                        I approach generative modeling as a problem of operator design, studying how diffusion-based dynamics and attention mechanisms shape information flow, stability, and spectral behavior. 
-                        <!-- My goal is to unify the locality and robustness of diffusion with the global expressiveness of attention by embedding physically and mathematically grounded structure directly into the attention operator itself—leading to generative models that are scalable, interpretable, and well-behaved across depth, particularly on structured domains such as graphs. -->
-                        
-                        My goal is to bridge ideas from operator theory, 
-                        physics-informed modeling, and modern generative AI, including diffusion and attention-based models.
-                    </p>
-                    <p>
-                        Beyond theory, I enjoy building systems that work in practice. My projects span applications from 
-                        materials generation to social media analysis and computer vision in healthcare. 
-                        Across these domains, I care deeply about models that are robust, interpretable, and principled, not just accurate.
-                    </p>
-                    <p>
-                        I earned my B.Sc. in Computer Engineering from the University of Tehran, graduating with a 4.0 GPA and 
-                        a concentration in machine learning and AI. Since then, I've worked across academia and industry, 
-                        developing end-to-end ML pipelines, publishing peer-reviewed research, and collaborating across disciplines.
-                    </p>
-                </div>
-            </div>
+    <section class="section wrap" id="publications" aria-labelledby="publications-title">
+      <div class="section-inner">
+        <h2 class="section-label" id="publications-title">Publications</h2>
+        <div class="section-body">
+          <ol class="pubs">
+            <li>
+              <p class="pub-title">Grammar-Constrained Generative Modeling of Layer-Resolved MXene Compositions</p>
+              <p class="pub-authors"><strong>A. Armin</strong>, M. Mozafari, D. Schwartz, A. Shokoufandeh, M. Soroush</p>
+              <p class="pub-venue"><span class="status">In revision</span> <a href="https://github.com/atieharmin/Grammar-Constrained-MXene">Code</a></p>
+            </li>
+            <li>
+              <p class="pub-title">Convex Attention: A Data-Driven Approach for Industrial Optimization</p>
+              <p class="pub-authors">D. Schwartz, <strong>A. Armin</strong>, A. Shokoufandeh, M. Soroush</p>
+              <p class="pub-venue"><span>Machine Learning: Engineering</span> <a href="https://iopscience.iop.org/article/10.1088/3049-4761/ae1bac/pdf">Paper</a></p>
+              <p class="pub-note">A convexified attention mechanism that weights input features under convexity constraints, for interpretable optimization when industrial data is scarce (95% R&sup2;).</p>
+            </li>
+            <li>
+              <p class="pub-title">Support in Short Form: Investigating TikTok Comments on Videos with #Harassment</p>
+              <p class="pub-authors"><strong>A. Armin</strong>, J. J. Trybala, J. Young, A. Razi</p>
+              <p class="pub-venue"><span>CHI 2024 Extended Abstracts</span> <a href="https://dl.acm.org/doi/10.1145/3613905.3650849">Paper</a></p>
+              <p class="pub-note">Topic analysis of 145,515 comments with DistilBERT embeddings and clustering, surfacing nine themes from community support to self-defense.</p>
+            </li>
+            <li>
+              <p class="pub-title">Comparison of Machine Learning Methods for Cryptocurrency Price Prediction</p>
+              <p class="pub-authors"><strong>A. Armin</strong>, A. Shiri, B. Bahrak</p>
+              <p class="pub-venue"><span>ICSPIS 2022</span> <a href="https://ieeexplore.ieee.org/abstract/document/10043898/">Paper</a></p>
+              <p class="pub-note">ARIMA, SVM, RNN, LSTM and Bi-LSTM compared for daily Bitcoin, Ethereum and BNB price forecasting.</p>
+            </li>
+          </ol>
         </div>
+      </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Ph.D. in Computer Science</h3>
-                            <span class="timeline-date">2023 – Present</span>
-                        </div>
-                        <h4 class="timeline-institution">Drexel University</h4>
-                        <ul class="timeline-details">
-                            <li><strong>Advisor:</strong> Ali Shokoufandeh</li>
-                            <li><strong>Research:</strong> Generative AI, Deep Learning, Graph Neural Networks, Physics-informed Neural Networks, Operator Theory</li>
-                            <li><strong>Candidacy:</strong> Generative Modeling as Operator Design: From Diffusion to Attention
-                                <span class="candidacy-links">
-                                    <a href="Candidacy%20Report.pdf" target="_blank" rel="noopener" class="doc-link">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                            <polyline points="14 2 14 8 20 8"></polyline>
-                                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                                            <polyline points="10 9 9 9 8 9"></polyline>
-                                        </svg>
-                                        Report
-                                    </a>
-                                    <a href="Candidacy%20Presentation.pdf" target="_blank" rel="noopener" class="doc-link">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                                        </svg>
-                                        Slides
-                                    </a>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>B.Sc. in Computer Engineering</h3>
-                            <span class="timeline-date">2018 – 2023</span>
-                        </div>
-                        <h4 class="timeline-institution">University of Tehran</h4>
-                        <ul class="timeline-details">
-                            <li><strong>GPA:</strong> 4.0</li>
-                            <li><strong>Concentration:</strong> Machine Learning and AI</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-inner">
+        <h2 class="section-label" id="experience-title">Experience</h2>
+        <div class="section-body">
+          <ol class="timeline">
+            <li>
+              <p class="when">2024 &ndash; now</p>
+              <div>
+                <h3>Graduate Research Assistant</h3>
+                <p class="where">Drexel University, College of Computing &amp; Informatics &middot; with Ali Shokoufandeh</p>
+                <p>Operator-theoretic attention and graph neural networks: spectral regularization of transformers, oscillatory dynamics in GNNs, Fourier-based positional encodings. Generative models for materials with the Chemical Engineering department.</p>
+              </div>
+            </li>
+            <li>
+              <p class="when">Fall 2023</p>
+              <div>
+                <h3>Graduate Research Assistant</h3>
+                <p class="where">DONUTS Lab, Drexel University</p>
+                <p>An NLP pipeline combining transformer embeddings with clustering to study how communities respond to harassment on TikTok, published at CHI 2024.</p>
+              </div>
+            </li>
+            <li>
+              <p class="when">2022 &ndash; 2023</p>
+              <div>
+                <h3>Undergraduate Research Assistant</h3>
+                <p class="where">University of Tehran &middot; with Behnam Bahrak</p>
+                <p>Classical and deep models for cryptocurrency price forecasting, published at ICSPIS 2022.</p>
+              </div>
+            </li>
+            <li>
+              <p class="when">2021</p>
+              <div>
+                <h3>Data Science Intern</h3>
+                <p class="where">Almedic</p>
+                <p>COVID-19 diagnosis from chest X-rays with pretrained EfficientNetB0 and MobileNetV2 (95&ndash;98% accuracy), deployed as a Streamlit app.</p>
+              </div>
+            </li>
+          </ol>
         </div>
+      </div>
     </section>
 
-    <!-- Research Section -->
-    <section id="research" class="section research">
-        <div class="container">
-            <h2 class="section-title">Research Experience</h2>
-            
-            <div class="research-grid">
-                <article class="research-card featured">
-                    <div class="research-card-header">
-                        <span class="research-tag">Current</span>
-                        <span class="research-date">03/2024 – Present</span>
-                    </div>
-                    <h3>Graduate Research Assistant</h3>
-                    <p class="research-location">Drexel College of Computing and Informatics • Advisor: Ali Shokoufandeh</p>
-                    <p class="research-summary">
-                        My research focuses on developing novel deep learning architectures with strong theoretical foundations, 
-                        particularly in attention mechanisms and graph neural networks. I work on spectral methods for transformer 
-                        regularization, oscillatory dynamics in GNNs, and Fourier-based positional encodings. I also collaborate 
-                        with the Chemical Engineering Department on generative models for materials science, applying reinforcement 
-                        learning to ensure valid molecular outputs.
-                    </p>
-                </article>
-
-                <article class="research-card">
-                    <div class="research-card-header">
-                        <span class="research-date">09/2023 – 12/2023</span>
-                    </div>
-                    <h3>Graduate Research Assistant</h3>
-                    <p class="research-location">DONUTS Lab • Drexel College of Computing and Informatics</p>
-                    <p class="research-summary">
-                        At the DONUTS Lab, I applied natural language processing techniques to study online harassment on social media 
-                        platforms. I developed an NLP pipeline combining transformer-based embeddings with clustering methods to 
-                        analyze large-scale comment data, uncovering thematic patterns in community responses to harassment.
-                    </p>
-                </article>
-
-                <article class="research-card">
-                    <div class="research-card-header">
-                        <span class="research-date">09/2022 – 06/2023</span>
-                    </div>
-                    <h3>Undergraduate Research Assistant</h3>
-                    <p class="research-location">University of Tehran • Advisor: Behnam Bahrak</p>
-                    <p class="research-summary">
-                        My undergraduate research explored time-series forecasting for cryptocurrency markets. I conducted a 
-                        comparative analysis of classical and deep learning models for price prediction, evaluating their 
-                        performance across multiple cryptocurrencies and market conditions.
-                    </p>
-                </article>
-            </div>
+    <section class="section wrap" id="education" aria-labelledby="education-title">
+      <div class="section-inner">
+        <h2 class="section-label" id="education-title">Education</h2>
+        <div class="section-body">
+          <ol class="timeline">
+            <li>
+              <p class="when">2023 &ndash; now</p>
+              <div>
+                <h3>Ph.D. in Computer Science</h3>
+                <p class="where">Drexel University &middot; Advisor: Ali Shokoufandeh</p>
+                <p>Generative AI, graph neural networks, physics-informed models, operator theory. Advanced to candidacy with <a href="Candidacy%20Report.pdf">Generative Modeling as Operator Design</a>.</p>
+              </div>
+            </li>
+            <li>
+              <p class="when">2018 &ndash; 2023</p>
+              <div>
+                <h3>B.Sc. in Computer Engineering</h3>
+                <p class="where">University of Tehran &middot; GPA 4.0</p>
+                <p>Concentration in machine learning and AI.</p>
+              </div>
+            </li>
+          </ol>
         </div>
+      </div>
     </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="section publications">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <p class="publications-intro">
-                My research focuses on developing novel deep learning architectures with strong theoretical foundations.
-            </p>
-            
-            <div class="publications-grid">
-                <!-- Published Papers -->
-                <div class="publication-category">
-                    
-                    <article class="publication-card">
-                        <p class="publication-venue">Machine Learning: Engineering Journal</p>
-                        <h3 class="publication-title">Convex Attention: A Data-Driven Approach for Industrial Optimization</h3>
-                        <p class="publication-authors">D Schwartz, <strong>A Armin</strong>, A Shokoufandeh, M Soroush</p>
-                        <p class="publication-description">
-                            Implemented a convexified attention mechanism that adaptively weights input features 
-                            under convexity constraints, improving interpretability in data-limited industrial 
-                            optimization with 95% R² accuracy.
-                        </p>
-                        <div class="publication-links">
-                            <a href="https://iopscience.iop.org/article/10.1088/3049-4761/ae1bac/pdf" target="_blank" rel="noopener" class="publication-link">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Paper
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="publication-card">
-                        <p class="publication-venue">Extended Abstracts of the CHI 2024</p>
-                        <h3 class="publication-title">Support in Short Form: Investigating TikTok Comments on Videos with #Harassment</h3>
-                        <p class="publication-authors"><strong>A Armin</strong>, JJ Trybala, J Young, A Razi</p>
-                        <p class="publication-description">
-                            Built an NLP pipeline (DistilBERT + per-video positional encodings + K-Means) to analyze 
-                            recurring themes in 145,515 comments on TikTok videos tagged with #harassment, identifying 
-                            nine topics, including community response to harassment and threats, law enforcement responses 
-                            to harassment, and discussion around self-defense strategies.
-                        </p>
-                        <div class="publication-links">
-                            <a href="https://dl.acm.org/doi/10.1145/3613905.3650849" target="_blank" rel="noopener" class="publication-link">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Paper
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <article class="publication-card">
-                        <p class="publication-venue">2022 Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS)</p>
-                        <h3 class="publication-title">Comparison of Machine Learning Methods for Cryptocurrency Price Prediction</h3>
-                        <p class="publication-authors"><strong>A Armin</strong>, A Shiri, B Bahrak</p>
-                        <p class="publication-description">
-                            Applied various machine learning models (ARIMA, SVM, RNN, LSTM, Bi-LSTM) to predict the 
-                            daily price of Bitcoin, Ethereum, and BNB Coin, providing comprehensive comparative analysis 
-                            of prediction methodologies.
-                        </p>
-                        <div class="publication-links">
-                            <a href="ieeexplore.ieee.org/abstract/document/10043898/" target="_blank" rel="noopener" class="publication-link">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                Paper
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
+    <section class="section wrap" id="earlier" aria-labelledby="earlier-title">
+      <div class="section-inner">
+        <h2 class="section-label" id="earlier-title">Earlier work</h2>
+        <div class="section-body">
+          <ul class="earlier">
+            <li><a href="https://github.com/atieharmin/Covid-19-classification"><span class="earlier-title">COVID-19 X-ray diagnosis</span><span class="earlier-desc">Transfer learning with EfficientNet and MobileNet, served with Streamlit</span></a></li>
+            <li><a href="https://github.com/atieharmin/Deep-Learning-Course-Projects"><span class="earlier-title">Deep learning from scratch</span><span class="earlier-desc">Backpropagation, CNNs and RNNs implemented without frameworks</span></a></li>
+            <li><a href="https://github.com/atieharmin/Machine-Learning-Course-Projects"><span class="earlier-title">Classical machine learning</span><span class="earlier-desc">Regression, Naive Bayes, EM, GMMs, Parzen windows and PCA from scratch</span></a></li>
+            <li><a href="https://github.com/atieharmin/RecSys-Course-Projects"><span class="earlier-title">Recommender systems</span><span class="earlier-desc">Collaborative, content-based and hybrid models on MovieLens and Amazon ratings</span></a></li>
+            <li><a href="https://github.com/atieharmin/IEMDB"><span class="earlier-title">IEMDB</span><span class="earlier-desc">A full-stack movie database with CI/CD, JDBC and OAuth</span></a></li>
+          </ul>
         </div>
+      </div>
     </section>
 
-    <!-- Ongoing Projects Section -->
-    <section id="ongoing-projects" class="section ongoing-projects">
-        <div class="container">
-            <h2 class="section-title">Ongoing Projects</h2>
-            <p class="ongoing-intro">
-                Current research projects I'm actively working on, spanning attention mechanisms, graph neural networks, and AI for materials science.
-            </p>
-            
-            <div class="ongoing-grid">
-                <article class="ongoing-card">
-                    <div class="ongoing-header">
-                        <span class="ongoing-status">Under Review @ ICLR 2026</span>
-                    </div>
-                    <h3>Fourier-Based Attention</h3>
-                    <p class="ongoing-description">
-                        Developing a learnable Fourier-based attention mechanism that enables frequency-aware context modeling. 
-                        This approach advances positional encoding for transformers, achieving +1.8pp improvement over Roformer 
-                        by leveraging spectral properties of input sequences.
-                    </p>
-                </article>
-                
-                <article class="ongoing-card">
-                    <div class="ongoing-header">
-                        <span class="ongoing-status">In Progress</span>
-                    </div>
-                    <h3>Damped Diffused Attention Mechanism</h3>
-                    <p class="ongoing-description">
-                        Designing a transformer architecture that regularizes attention before softmax via an SPD resolvent 
-                        on queries and keys with layerwise damping. This produces spectrally controlled, stable attention 
-                        with bounded gradients, addressing training instabilities in deep transformers.
-                    </p>
-                </article>
-                
-                <article class="ongoing-card">
-                    <div class="ongoing-header">
-                        <span class="ongoing-status">In Progress</span>
-                    </div>
-                    <h3>Oscillatory Graph Neural Networks</h3>
-                    <p class="ongoing-description">
-                        Building a GNN architecture where nodes act as damped harmonic oscillators with adaptive, 
-                        state-dependent coupling. This framework comes with proven phase-locked synchronization properties, 
-                        providing theoretical guarantees for message passing dynamics.
-                    </p>
-                </article>
-                
-                <article class="ongoing-card">
-                    <div class="ongoing-header">
-                        <span class="ongoing-status">In Progress</span>
-                    </div>
-                    <h3>MXene Materials Generation</h3>
-                    <p class="ongoing-description">
-                        Collaborating with the Chemical Engineering Department on a grammar-constrained Transformer for 
-                        generating valid MXene materials. Using reinforcement learning to enforce chemical validity constraints, 
-                        achieving 97.7% valid outputs for novel material discovery.
-                    </p>
-                </article>
-            </div>
+    <section class="section wrap" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner">
+        <h2 class="section-label" id="contact-title">Contact</h2>
+        <div class="section-body">
+          <p class="contact-lead">I&rsquo;m glad to talk about research collaborations, internships, or anything above.</p>
+          <p class="contact-email"><a href="mailto:atieharmin78@gmail.com">atieharmin78@gmail.com</a></p>
+          <ul class="pills">
+            <li><a href="https://scholar.google.com/citations?user=vuubQDkAAAAJ&amp;hl=en">Google Scholar</a></li>
+            <li><a href="https://github.com/atieharmin">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/atieh-armin">LinkedIn</a></li>
+          </ul>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">Previous Projects</h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">🏥</div>
-                    <h3>COVID-19 Diagnosis System</h3>
-                    <p class="project-meta">Data Science Intern @ Almedic • 2021</p>
-                    <p>Developed end-to-end pipeline using pretrained EfficientNetB0 and MobileNetV2 to diagnose COVID-19 
-                    using chest X-ray images with 95-98% accuracy. Deployed via web app using Streamlit.</p>
-                    <div class="project-tags">
-                        <span>Computer Vision</span>
-                        <span>Healthcare AI</span>
-                        <span>Streamlit</span>
-                    </div>
-                    <a href="https://github.com/atieharmin/covid-diagnosis" target="_blank" rel="noopener" class="project-github-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
+  <footer class="footer wrap">
+    <div class="footer-inner">
+      <p>&copy; 2026 Atieh Armin</p>
+      <p>Last updated October 2026</p>
+    </div>
+  </footer>
 
-                <div class="project-card">
-                    <div class="project-icon">🧠</div>
-                    <h3>Deep Learning from Scratch</h3>
-                    <p class="project-meta">Academic Project</p>
-                    <p>Implemented core concepts including forward/backward propagation, gradient descent, 
-                    and neural network architectures (CNNs, RNNs) from scratch without frameworks.</p>
-                    <div class="project-tags">
-                        <span>Neural Networks</span>
-                        <span>Backpropagation</span>
-                        <span>Python</span>
-                    </div>
-                    <a href="https://github.com/atieharmin/Machine-Learning-Course-Projects" target="_blank" rel="noopener" class="project-github-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">🎬</div>
-                    <h3>Recommender Systems</h3>
-                    <p class="project-meta">Academic Project</p>
-                    <p>Built collaborative, content-based, and hybrid recommenders using MovieLens 
-                    and Amazon Ratings datasets with multiple filtering approaches.</p>
-                    <div class="project-tags">
-                        <span>Collaborative Filtering</span>
-                        <span>Content-Based</span>
-                        <span>Hybrid</span>
-                    </div>
-                    <a href="https://github.com/atieharmin/RecSys-Course-Projects" target="_blank" rel="noopener" class="project-github-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">⛏️</div>
-                    <h3>Data Mining Pipeline</h3>
-                    <p class="project-meta">Academic Project</p>
-                    <p>Applied classification, clustering, and association-rule mining (Apriori, FP-Growth) 
-                    on diverse datasets through the entire data mining pipeline.</p>
-                    <div class="project-tags">
-                        <span>Classification</span>
-                        <span>Clustering</span>
-                        <span>Association Rules</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">📊</div>
-                    <h3>Machine Learning Algorithms</h3>
-                    <p class="project-meta">Academic Project</p>
-                    <p>Implemented key algorithms including Regression, Naive Bayes, EM, GMM, 
-                    Parzen Window, and PCA from scratch.</p>
-                    <div class="project-tags">
-                        <span>Statistical ML</span>
-                        <span>Dimensionality Reduction</span>
-                        <span>Clustering</span>
-                    </div>
-                    <a href="https://github.com/atieharmin/Machine-Learning-Course-Projects" target="_blank" rel="noopener" class="project-github-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">🌐</div>
-                    <h3>IMDB-like Web Application</h3>
-                    <p class="project-meta">Academic Project</p>
-                    <p>Built a full-stack movie database website with CI/CD pipeline, 
-                    JDBC database connectivity, and OAuth integration.</p>
-                    <div class="project-tags">
-                        <span>Full-Stack</span>
-                        <span>CI/CD</span>
-                        <span>OAuth</span>
-                    </div>
-                    <a href="https://github.com/atieharmin/IEMDB" target="_blank" rel="noopener" class="project-github-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Skills Section -->
-    <!-- <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">SQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Machine Learning & AI</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Deep Learning</span>
-                        <span class="skill-item">Transformers</span>
-                        <span class="skill-item">LLMs</span>
-                        <span class="skill-item">GNNs</span>
-                        <span class="skill-item">Generative Models</span>
-                        <span class="skill-item">PINNs</span>
-                        <span class="skill-item">Computer Vision</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">TorchDiffEq</span>
-                        <span class="skill-item">TensorFlow</span>
-                        <span class="skill-item">Keras</span>
-                        <span class="skill-item">scikit-learn</span>
-                        <span class="skill-item">NumPy</span>
-                        <span class="skill-item">Pandas</span>
-                        <span class="skill-item">SciPy</span>
-                        <span class="skill-item">Matplotlib</span>
-                        <span class="skill-item">Seaborn</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Data & Infrastructure</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">Neo4j</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Linux</span>
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Jupyter</span>
-                        <span class="skill-item">Streamlit</span>
-                        <span class="skill-item">React</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Mathematics & Theory</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Linear Algebra</span>
-                        <span class="skill-item">Probability</span>
-                        <span class="skill-item">PDEs</span>
-                        <span class="skill-item">Operator Theory</span>
-                        <span class="skill-item">Statistics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="contact-intro">
-                I'm always interested in discussing research collaborations, internship opportunities, 
-                or just connecting with fellow researchers and practitioners in AI/ML.
-            </p>
-            
-            <div class="contact-grid">
-                <a href="mailto:atieharmin78@gmail.com" class="contact-card">
-                    <span class="contact-icon">✉️</span>
-                    <h4>Email</h4>
-                    <p>atieharmin78@gmail.com</p>
-                </a>
-                
-                <a href="https://github.com/atieharmin" target="_blank" rel="noopener" class="contact-card">
-                    <span class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </span>
-                    <h4>GitHub</h4>
-                    <p>@atieharmin</p>
-                </a>
-                
-                <a href="https://linkedin.com/in/atieh-armin" target="_blank" rel="noopener" class="contact-card">
-                    <span class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </span>
-                    <h4>LinkedIn</h4>
-                    <p>atieh-armin</p>
-                </a>
-                
-                <a href="https://scholar.google.com/citations?user=vuubQDkAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" class="contact-card">
-                    <span class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
-                        </svg>
-                    </span>
-                    <h4>Google Scholar</h4>
-                    <p>Atieh Armin</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Atieh Armin. All rights reserved.</p>
-            <p class="footer-note">Built with passion for AI research</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
